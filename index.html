@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="index.min.css">
+    <link rel="stylesheet" href="stylesNoCritical.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6Lfi-oUlAAAAAH096nscLz6tC10MeEsbKRxCldpR'> 
+    </script>
+    <script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute('6Lfi-oUlAAAAAH096nscLz6tC10MeEsbKRxCldpR', {action: 'ejemplo'})
+    .then(function(token) {
+    var recaptchaResponse = document.getElementById('recaptchaResponse');
+    recaptchaResponse.value = token;
+    });});
+    grecaptcha.ready(function() {
+    grecaptcha.execute('6Lfi-oUlAAAAAH096nscLz6tC10MeEsbKRxCldpR', {action: 'ejemplo'})
+    .then(function(token) {
+    var recaptchaResponse2 = document.getElementById('recaptchaResponse2');
+    recaptchaResponse2.value = token;
+    });});
+    </script>    
+        
+    <title>Grupo Bicastro</title>
+</head>
+<body>
+
+    <header id="headerNoFixed">
+      <nav class="navbar navbar-expand-lg" >
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="logocompleto.png" alt="Logo" width="150" height="40" class="d-inline-block align-text-top">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" ></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item active dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      EMPRESAS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="empresa-castro.html">CASTRO ESTUDIO INMOBILIARIO</a></li>
+                      <li><a class="dropdown-item" href="empresa-bicastro.html">DESARROLLADORA BICASTRO</a></li>
+                      <li><a class="dropdown-item" href="empresa-bac.html">BAC - EST. ARQUITECTURA</a></li>
+                      <li><a class="dropdown-item" href="empresa-gimenez.html">GIMENEZ - EST. CONTABLE</a></li>
+                      <li><a class="dropdown-item" href="empresa-verna.html">VERNA & ASOC. - EST. JURIDICO </a></li>
+                    </ul>
+                  </li>
+                      <!-- <a class="nav-link active" aria-current="page" href="index.html#empresas">EMPRESAS</a> -->
+              
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="proyectos.html">PROYECTOS</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html#contacto">CONTACTO</a>
+                </li>
+                  
+                </ul>
+
+                <div id="socialToggle" class="navbar-nav justify-content-center flex-grow-1 pe-3" style="flex-direction: row; margin-left: 30px; margin-top: 40px; display: none;">
+                  <a href="https://www.instagram.com/grupobicastro/"><i class="fa fa-instagram linkedin" aria-hidden="false" id="socialFooter" style="color: #A72608 !important;"></i></a>
+                  <a href="https://www.linkedin.com/company/grupo-bicastro/"><i class="fa fa-linkedin linkedin" aria-hidden="false" id="socialFooter" style="color: #A72608 !important; margin-left: 20px"></i></a>
+                </div>
+                
+              </div>
+              <div class="offcanvas-footer" style="display: none">
+                <img src="logocompleto.png" alt="Logo" width="150" height="40" class="d-inline-block align-text-top" style="margin-left: 0px !important;">
+
+              </div>
+
+            </div>
+            <div class="socialNav">
+              <a href="https://www.instagram.com/grupobicastro/" target="_blank"><i class="fa fa-linkedin linkedin" aria-hidden="false"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/grupo-bicastro/" target="_blank" ><i class="fa fa-instagram linkedin" aria-hidden="false"></i>
+              </a>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <div>
+      <nav class="navbar navbar-expand-lg navFix" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" width="150" height="30" class="d-inline-block align-text-top">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Grupo Bicastro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item active dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EMPRESAS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="empresa-castro.html">CASTRO ESTUDIO INMOBILIARIO</a></li>
+                    <li><a class="dropdown-item" href="empresa-bicastro.html">DESARROLLADORA BICASTRO</a></li>
+                    <li><a class="dropdown-item" href="empresa-bac.html">BAC - EST. ARQUITECTURA</a></li>
+                    <li><a class="dropdown-item" href="empresa-gimenez.html">GIMENEZ - EST. CONTABLE</a></li>
+                    <li><a class="dropdown-item" href="empresa-verna.html">VERNA & ASOC. - EST. JURIDICO </a></li>
+                  </ul>
+                </li>
+                    <!-- <a class="nav-link active" aria-current="page" href="index.html#empresas">EMPRESAS</a> -->
+            
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="proyectos.html">PROYECTOS</a>
+                </li>                  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html#contacto">CONTACTO</a>
+              </li>
+                
+              </ul>
+              
+            </div>
+
+          </div>
+          <div class="socialNav2">
+            <a href="https://www.instagram.com/grupobicastro/" target="_blank"><i class="fa fa-instagram linkedin2" aria-hidden="false"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/grupo-bicastro/" target="_blank" ><i class="fa fa-linkedin linkedin2" aria-hidden="false"></i>
+            </a>
+          </div>
+        </div>
+    </nav>
+    </div>
+
+
+        <!-- Slideshow container -->
+  
+    <div class="contenedorSliderCompleto">
+      <div class="slideshow-container">
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+          <img class="imgSlider" src="SLIDER1-optimizado.jpg">
+        </div>
+
+        <div class="mySlides">
+          <img class="imgSlider" src="Slider2-optimizado.jpg">
+        </div>
+
+        <div class="mySlides ">
+          <img class="imgSlider" src="Slider3-optimizado.jpg">
+        </div>
+
+        <div class="cartelSobreSlider">
+          <div class="titulosCartelSlider">
+            <p class="tituloTransparente">-</p>
+            <h1 class="titulo1Slider">Somos Familia,</h1>
+            <h1 class="titulo2Slider">Construimos Vínculos</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>      
+
+
+
+    <!-- The dots/circles -->
+    <div style="text-align:center; margin-top: -30px;position: relative; margin-bottom: 10px;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <div class="seccionFondoBicastro">
+      <div class="espaciador"></div>
+      <div class="primeraSeccion">
+        <div id="primerTituloHomeResponsive" class="titulos" style="display: none;">
+          <p>GRUPO</p><p class="tituloRojoPrimera">BICASTRO</p>
+        </div>
+        <div class="contenedorImagenTexto">
+            <div class="contenedorImagenPrimeraSeccion">
+              <img src="NOSOTROS-HOME.jpg" alt="Nosotros" class="imgNosotrosHome">
+            </div>
+          <div class="textoPrimeraSeccion">
+            <div class="contenedorTextoPrimeraSeccion">
+              <div id="primerTituloHome" class="titulos">
+                <p>GRUPO</p><p class="tituloRojoPrimera">BICASTRO</p>
+              </div>
+              
+              <p id="textoPrimeraHome" style="color:#75838A; margin-right: -18%;
+              ">Nos especializamos en el desarrollo, diseño y comercializacion de torres, 
+                loteos, barrios cerrados y countries. Trabajamos para brindarle a nuestros 
+                clientes un servicio integral y de confianza, en el rubro inmobiliario. Te acompañamos y 
+                ayudamos a que tis sueños y proyectos se concreten. "Somos Familia, Construimos Vínculos"</p>
+              <a href="nosotros.html" target="_blank" class="linkBajoSecciones">CONOCENOS</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="segundaSeccion">
+        <div class="contenedorSegundaSeccion">
+          <div id="empresas">NUESTRAS</div>
+          <div class="tituloRojo">EMPRESAS</div>
+   
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div>
+
+      <div class="terceraSeccion">
+        
+        <div class="containerLogo">
+          <img src="LOGOS INDIVIDUALES/CASTRO.png" alt="">
+ 
+          <div class="overlay">
+            <div class="tarjetaEmpresaHome">
+              <img class="logoTarjetaOverlay" src="LOGOS INDIVIDUALES/CASTRO - copia.png" alt="">
+                <p class="textoEmpresaHome" style="color: #75838A;font-weight: 600;margin-top: 20px;margin-left: 10px; font-size: 0.8vw; margin-top: -5px;"> Castro Estudio Inmobiliario,</p><p class="textoEmpresaHome"style="color: #75838A; font-weight: 400;margin-left: 10px;font-size: 0.8vw;
+                margin-top: -14px;">desarrollos, ventas y alquileres inmobiliarios premium.</p>
+                <div>
+                  <a class="textoEmpresaHome" href="https://castroestudioinmobiliario.com"><button class="botonEmpresas" style="height: 100% !important;">WEB</button></a> 
+                  <a class="textoEmpresaHome" href="empresa-castro.html"><button class="botonEmpresas" style="height: 100% !important;">+ INFO</button></a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="containerLogo">
+          <img src="LOGOS INDIVIDUALES/BICASTRO.png" alt="">
+          <div class="overlay">
+            <div class="tarjetaEmpresaHome">
+              <img class="logoTarjetaOverlay" src="LOGOS INDIVIDUALES/BICASTRO - copia.png" alt="" style="width: 5rem!important; height: 4rem !important;">
+              <p class="textoEmpresaHome" style="color: #75838A; font-weight: 600; margin-top: 20px; margin-left: 10px;font-size: 0.8vw; margin-top: 0px;"> BiCastro Desarrolladora,</p><p class="textoEmpresaHome"style="color: #75838A; font-weight: 400;margin-left: 10px;font-size: 0.8vw;
+              margin-top: -14px;">desarrollos inmobiliarios de diseño y categoría.</p>
+              <div>
+                <a class="textoEmpresaHome" href="empresa-bicastro.html"><button class="botonEmpresas" style="height: 100% !important;">+ INFO</button></a>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="containerLogo">
+          <img src="LOGOS INDIVIDUALES/BAC.png" alt="">
+          <div class="overlay">
+            <div class="tarjetaEmpresaHome">
+              <img class="logoTarjetaOverlay" src="LOGOS INDIVIDUALES/BAC - copia.png" alt="">
+              <p class="textoEmpresaHome" style="color: #75838A; font-weight: 600; margin-top: 20px; margin-left: 10px;font-size: 0.8vw; margin-top: -5px;"> BAC Estudio de Arquitectura.</p><p class="textoEmpresaHome"style="color: #75838A; font-weight: 400;margin-left: 10px;font-size: 0.8vw;
+              margin-top: -14px;">Proyecto, dirección, ejecución y tramitación de obras.</p>
+              
+              <div>
+                <a class="textoEmpresaHome" href="https://estudiobac.com/"><button class="botonEmpresas" style="height: 100% !important;">WEB</button></a> 
+                <a class="textoEmpresaHome" href="empresa-bac.html"><button class="botonEmpresas" style="height: 100% !important;">+ INFO</button></a>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="containerLogo">
+          <img src="LOGOS INDIVIDUALES/GIMENEZ.png" alt="" >
+          <div class="overlay">
+            <div class="tarjetaEmpresaHome">
+              <img class="logoTarjetaOverlay"src="LOGOS INDIVIDUALES/GIMENEZ - copia.png" alt="" >
+              <p class="textoEmpresaHome" style="color: #75838A; font-weight: 600; margin-top: 20px; margin-left: 10px; font-size: 0.8vw; margin-top: -5px;"> Estudio Contable Gimenez & Asociados,</p><p class="textoEmpresaHome"style="color: #75838A; font-weight: 400;margin-left: 10px;font-size: 0.8vw;
+              margin-top: -14px;">especializados en sociedades y desarrollos inmobiliarios.</p>
+              
+              <div>
+                  <a class="textoEmpresaHome"  href="empresa-gimenez.html"><button class="botonEmpresas"  style="height: 100% !important;">+ INFO</button></a>
+              </div>
+              
+            </div>
+        </div>
+        </div>
+
+        <div class="containerLogo">
+          <img src="LOGOS INDIVIDUALES/VERNA.png" alt="">
+          <div class="overlay">
+            <div class="tarjetaEmpresaHome textoEmpresaHome">
+              <img class="logoTarjetaOverlay " src="LOGOS INDIVIDUALES/VERNA-NUEVO.png" alt="" >
+              <p class="textoEmpresaHome" style="color: #75838A; font-weight: 600; margin-top: 20px; margin-left: 10px; font-size: 0.8vw; margin-top: -5px;"> Estudio Jurídico Verna & Asociados, </p><p class="textoEmpresaHome" style="color: #75838A; font-weight: 400;margin-left: 10px;font-size: 0.8vw;
+              margin-top: -14px;">Abogadas UBA Gran Buenos Aires y CABA.</p>
+              <div>
+                <a class="textoEmpresaHome" href="https://vernayasociados.com.ar"><button class="botonEmpresas">WEB</button></a> 
+                <a class="textoEmpresaHome" href="empresa-verna.html"><button class="botonEmpresas">+ INFO</button></a>
+              </div>
+              
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="imgParallax">
+    <div>
+      <p class="titulo1Parallax">
+        Te acompañamos y ayudamos a que
+      </p>
+      <p class="titulo2Parallax" >
+        tus sueños y proyectos</p>
+      <p class="titulo2Parallax" >
+        se concreten.</p>
+    </div>
+      
+
+    </div>
+
+
+
+    <div>
+      <div class="cuartaSeccion">
+        <div class="contenedorCuartaSeccion">
+          <div>NUESTROS</div>
+          <div class="tituloRojoCuarta">DESARROLLOS</div>
+        </div>
+
+        <div class="contenedorImgCuarta">
+          
+          <div style="overflow-x: initial;">
+            <div class="contenedorImgProy1" ><a href="proyecto-san-nicanor.html" target="_blank"><img src="SAN-NICANOR-HOME.jpg" alt="" ></a></div>
+          </div>
+          <div style="overflow-x: initial;">
+            <div class="contenedorImgProy2" ><a href="proyectos.html" target="_blank"><img src="FIORENZA-HOME.jpg" alt=""></a></div>
+          </div>
+  
+
+          
+        </div>
+        
+      </div>
+      <div style="margin-top: 20px;">
+        <a href="proyectos.html"  target="_blank" class="linkBajoSecciones">VER MAS</a>
+
+      </div>  
+    
+    
+    </div>
+
+    <div class="quintaSeccion">
+      <div class="contenedorQuintaSeccion">
+        <div>NOTAS</div>
+        <div class="tituloRojoQuinta">DESTACADAS</div>
+        
+      </div>
+
+      <div style="background-image: url('fondoBlog8.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+      <div class="tarjetasBlog" >
+        <div class="fondoCard" id="fondo1" style="margin-left: 0rem !important;">
+          <div class="card" style="width: 15vw; height: 18vw; margin-left: 50%; margin-top: 25%;">
+            <div class="card-body">
+              <h5 class="card-title" id="tituloPost1" style="font-size: 1.5vw;">Titulo</h5>
+              <div class="card-text" id="resumenPost1" style="font-size: 1vw;">
+
+              </div>
+              <a href="#" class="linkBajoSecciones" id="linkPost1" style="color: #A72608 !important; margin-left: 0%;">Leer Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="fondoCard" id="fondo2">
+          <div class="card" style=" width: 15vw; height: 18vw; margin-left: 50%; margin-top: 25%;">
+          <div class="card-body">
+            <h5 class="card-title" id="tituloPost2" style="font-size: 1.5vw;">Titulo</h5>
+            <div class="card-text" id="resumenPost2" style="font-size: 1vw;">
+
+            </div>
+            <!-- <p class="card-text" id="resumenPost1">Resumen del Contenido de la nota.</p> -->
+            <a href="#" class="linkBajoSecciones" id="linkPost2" style="color: #A72608 !important; margin-left: 0%;">Leer Mas</a>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="fondoCard" id="fondo3">
+          <div class="card" style="width: 15vw; height: 18vw; margin-left: 50%; margin-top: 25%;">
+            <div class="card-body">
+              <h5 class="card-title" id="tituloPost3" style="font-size: 1.5vw;">Titulo</h5>
+              <div class="card-text" id="resumenPost3" style="font-size: 1vw;">
+
+              </div>
+              <a href="#" class="linkBajoSecciones" id="linkPost3" style="color: #A72608 !important; margin-left: 0%;">Leer Mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 30px;">
+        <a href="https://blog.grupobicastro.com" target="_blank" class="linkBajoSecciones">IR AL BLOG</a>
+      </div>  
+
+    </div>
+
+    </div>
+
+
+    <div id="contacto"></div>
+    <div class="seccionDondeEstamos" >
+      <div class="dondeEstamosCartel1">
+        <div class="contenedorSextaSeccion">
+          <div>DONDE</div>
+          <div class="tituloRojoSexta">ESTAMOS</div>
+          <div style="font-size: 1.2rem;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          color: #1D3441;
+          margin-top: 15px;">Informacion de Contacto</div>
+          <div style="font-size: 1rem;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          padding-left: 20px;
+          color: #1D3441;
+          margin-top: 10px;"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 22px !important; margin-right: 10px;"></i>
+Domingo Faustino Sarmiento 1107 - San Miguel - Buenos Aires - Argentina</div>
+          <div style="font-size: 1rem;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          padding-left: 20px;
+          color: #1D3441;"><i class="fa fa-phone" aria-hidden="true" style="font-size: 22px !important;margin-right: 10px"></i>
++5411 61825309</div>
+          <div style="font-size: 1rem;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          padding-left: 20px;
+          color: #1D3441;"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 22px !important;margin-right: 10px"></i>
++5411 4451-3457</div>
+          <div style="font-size: 1rem;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          padding-left: 20px;
+          color: #1D3441;"><i class="fa fa-envelope" aria-hidden="true"style="font-size: 22px !important;margin-right: 10px"></i>
+administracion@bicastrosrl.com</div>
+          <div style="font-size: 1.2rem;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          color: #1D3441;
+          margin-top: 10px;
+          text-align: center;
+          margin-left: -10%;">Nuestras Redes</div>
+          <div style="margin-left: 30px; margin-top: 5px;
+          text-align: center;
+          margin-left: -10%;">
+            <a href="https://www.instagram.com/grupobicastro/"><i class="fa fa-instagram linkedin" aria-hidden="false" id="socialFooter"></i></a>
+            <a href="https://www.linkedin.com/company/grupo-bicastro/"><i class="fa fa-linkedin linkedin" aria-hidden="false" id="socialFooter"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2575296765012!2d-58.70985088481528!3d-34.54703438047411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0940587a0b%3A0x83649530cb50ec25!2sDomingo%20Faustino%20Sarmiento%201107%2C%20B1663EDC%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1672147484353!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <div class="dondeEstamosCartel">
+          <div class="contenedorSextaSeccion">
+            <div>DONDE</div>
+            <div class="tituloRojoSexta">ESTAMOS</div>
+            <div style="font-size: 1.3vw;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            color: #1D3441;
+            margin-top: 15px;">
+            
+            Informacion de Contacto</div>
+            
+            <div style="display: flex; flex-direction: column; margin-top: 15px; color: #1D3441;">
+          
+            
+              <div class="dondeEstamosTexto" style="display: inline-flex;
+              ">            
+                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 25px !important; margin-left: -18px;"></i>              
+                <p>Domingo Faustino Sarmiento 1107 - San Miguel - Buenos Aires - Argentina</p>    
+              </div>
+              
+              <div class="dondeEstamosTexto" style="display: inline-flex;
+              margin-top: 0px;">
+              
+                <i class="fa fa-phone" aria-hidden="true" style="font-size: 25px !important;margin-left: -18px;"></i>
+                <p>+5411 61825309</p>
+
+              </div>
+              
+              
+              <div class="dondeEstamosTexto" style="display: inline-flex;
+              margin-top: 0px;">
+                <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 25px !important;margin-left: -18px;"></i>
+                <p>+5411 4451-3457</p>
+              </div>
+
+
+              <div class="dondeEstamosTexto" style="display: inline-flex;
+              margin-top: 0px;">
+                <i class="fa fa-envelope" aria-hidden="true"style="font-size: 25px !important;margin-left: -18px;"></i>
+                <p>administracion@bicastrosrl.com</p>
+              </div>
+            
+          </div>
+           
+           <div style="font-size: 1.3vw;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            color: #1D3441;
+            margin-top: 10px;">Nuestras Redes</div>
+            <div style="margin-left: 30px; margin-top: -20px;">
+              <a href="https://www.instagram.com/grupobicastro/"><i class="fa fa-instagram linkedin" aria-hidden="false" id="socialFooter"></i></a>
+              <a href="https://www.linkedin.com/company/grupo-bicastro/"><i class="fa fa-linkedin linkedin" aria-hidden="false" id="socialFooter"></i></a>
+            </div>
+  
+          </div>
+        </div>
+      
+      </div>
+
+      
+      
+      <div id="prueba">
+        <a id="whatsFlotante" href="https://wa.me/1161825309" class="whatsApp whats-on-hover" target="_blank">
+          <i class="fa fa-whatsapp my-whatsApp"></i>
+          <div id="cartelWhatsapp">Contactanos</div>
+        </a>
+      </div>
+
+
+      <!-- <main>
+
+        <div class="container py-5 text-center">
+          <p>contactanos</p>
+          <a href="#" class="link float-on-hover">Float</a>
+        </div>
+      </main> -->
+
+    <footer>
+
+      <div class="formularioContacto">
+        <h3 style="text-align: center;">Si queres más información contactate con nosotros</h3>
+
+        <form action="submitForm.php" method="POST" class="form-horizontal">
+          <div class="row">
+            <div class="col">
+              <input id="Name" name="Name" type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Nombre y Apellido">
+              <input type="text" name="Ubicacion" class="form-control" placeholder="Zona / Ubicación" aria-label="Zona / Ubicación">
+              <input type="text" name="Telefono" class="form-control" placeholder="Telefono" aria-label="Telefono">
+              <input id="Email" name="Email" type="email" class="form-control" placeholder="Email" aria-describedby="emailHelp">
+
+            </div>
+            <div class="col">
+              <select class="form-select" name="Motivo" placeholder="Motivo de su Consulta" id="motivo" style="border-radius: 0px !important; margin-top: 2px;" required>
+                <option selected>Motivo de su Consulta</option>
+                <option>Cotización</option>
+                <option>Alquiler</option>
+                <option>Inversión</option>
+                <option>Venta</option>
+                <option>Otro</option>
+              </select>              
+              <select class="form-select" name="Empresa" placeholder="Empresa" id="empresa" style="border-radius: 0px !important; margin-top: 2px;" required>
+                <option selected>Empresa</option>
+                <option>Castro Estudio Inmobiliario</option>
+                <option>Bicastro Desarrolladora</option>
+                <option>BAC Esudio de Arq.</option>
+                <option>Gimenez & Asociados</option>
+                <option>Verna & Asociados</option>
+              </select>              
+              <textarea id="Message" name="Message" class="form-control" placeholder="Mensaje" rows="3" style="height: 78px;"></textarea>
+            </div>
+          </div>
+          <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+          <button type="submit" name="submit" value="Submit" class="btnEnviar">ENVIAR</button>
+        </form>
+      </div>
+
+      <div class="formularioContactoResponsive">
+        <h3 style="text-align: center;">Si queres más información contactate con nosotros</h3>
+
+        <form action="submitForm2.php" method="POST" class="form-horizontal">
+          <div class="row">
+            <div class="col">
+              <input id="Name" name="Name" type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Nombre y Apellido" required>
+              <input type="text" name="Ubicacion" class="form-control" placeholder="Zona / Ubicación" aria-label="Zona / Ubicación">
+              <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono" required>
+              <input id="Email" name="Email" type="email" class="form-control" placeholder="Email" aria-describedby="emailHelp" required>
+              <select class="form-select" name="Motivo" placeholder="Motivo de su Consulta" id="motivo" style="border-radius: 0px !important; margin-top: 2px;" required>
+                <option selected>Motivo de su Consulta</option>
+                <option>Cotización</option>
+                <option>Alquiler</option>
+                <option>Inversión</option>
+                <option>Venta</option>
+                <option>Otro</option>
+              </select>              
+              <select class="form-select" name="Empresa" placeholder="Empresa" id="empresa" style="border-radius: 0px !important; margin-top: 2px;" required>
+                <option selected>Empresa</option>
+                <option>Castro Estudio Inmobiliario</option>
+                <option>Bicastro Desarrolladora</option>
+                <option>BAC Esudio de Arq.</option>
+                <option>Gimenez & Asociados</option>
+                <option>Verna & Asociados</option>
+              </select>              
+              <textarea id="Message" name="Message" class="form-control" placeholder="Mensaje" rows="3" style="height: 78px;" required></textarea>
+
+            </div>
+          </div>
+          <input type="hidden" name="recaptcha_response" id="recaptchaResponse2">
+          <button type="submit" name="submit" value="Submit" class="btnEnviar">ENVIAR</button>
+        </form>
+      </div>
+
+      <div class="fondoFooter">
+        <a href="index.html"><img class="logoFooter" src="logocompleto.png" alt="" style="width: auto; height:60px;"></a>
+        <img class="nuestrasEmpresasResponsive" src="nuestrasEmpresasResponsive.jpg" alt="" style="width: auto; height:30px; display: none">
+        <div class="footerEmpresas">
+          <img class="nuestrasEmpresas" src="BANNER INFERIOR2.png" alt="" style="width: auto; height:100px;">
+          <a class="footerEmpresaIndividual" href="empresa-castro.html"><img src="LOGOS INDIVIDUALES/CASTRO.png" alt=""></a>
+          <a class="footerEmpresaIndividual" href="empresa-bicastro.html"><img src="LOGOS INDIVIDUALES/BICASTRO.png" alt="" ></a>
+          <a class="footerEmpresaIndividual" href="empresa-bac.html"><img src="LOGOS INDIVIDUALES/BAC.png" alt="" ></a>
+          <a class="footerEmpresaIndividual" href="empresa-gimenez.html"><img src="LOGOS INDIVIDUALES/GIMENEZ.png" alt=""></a>
+          <a class="footerEmpresaIndividual" href="empresa-verna.html"><img src="LOGOS INDIVIDUALES/VERNA.png" alt=""></a>
+        </div>
+        <img class="bannerResponsive" src="bannerResponsive.png" alt="" style="width: auto; height:100px; display: none;">
+        <img class="direccion" src="pie direccion.png" alt="" style="width: 200px; height:60px;">
+        <img class="direccionResp" src="direccionResponsive.png" alt="" style="width: auto; height:60px; display: none;">
+
+      </div>
+
+
+    </footer>
+
+
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
